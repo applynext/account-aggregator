@@ -42,7 +42,7 @@ public class AccountServiceTest {
 		accountService = (AccountService) ctx.getBean("accountService");
 		
 		greenMail = new GreenMail(ServerSetup.SMTP);
-		greenMail.setUser("applynext@163.com", "H109049");
+		greenMail.setUser("", "");
 		greenMail.start();
 		
 		File persistDataFile = new File("target/test-classes/persist-data.xml");
@@ -64,7 +64,7 @@ public class AccountServiceTest {
 		signUpRequest.setCaptchaValue(captchaValue);
 		signUpRequest.setId("dragon");
 		signUpRequest.setName("dragon");
-		signUpRequest.setEmail("410343120@qq.com");
+		signUpRequest.setEmail("");
 		signUpRequest.setPassword("admin");
 		signUpRequest.setConfirmPassword("admin");
 		signUpRequest.setActivateServiceUrl("http://localhost:8080/acount/activate");
